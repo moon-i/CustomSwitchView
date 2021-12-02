@@ -1,9 +1,9 @@
-package com.shinhan.switchtest
+package com.study.switchtest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.shinhan.switchtest.databinding.ActivityMainBinding
+import com.study.switchtest.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

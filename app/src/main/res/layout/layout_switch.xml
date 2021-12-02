@@ -1,37 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    android:layout_width="76dp"-->
-<!--    android:layout_height="34dp"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
-
-<!--    <View-->
-<!--        android:id="@+id/switchBackground"-->
-<!--        android:layout_width="64dp"-->
-<!--        android:layout_height="24dp"-->
-<!--        android:background="@drawable/on"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <View-->
-<!--        android:id="@+id/switchBtn"-->
-<!--        android:layout_width="36dp"-->
-<!--        android:layout_height="34dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintLeft_toLeftOf="@id/switchBackground"-->
-<!--        android:layout_marginRight="-7dp"-->
-<!--        android:layout_marginLeft="-6dp"-->
-<!--        android:background="@drawable/thumb_circle"/>-->
-
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="74dp"
-    android:layout_height="34dp">
+    android:id="@+id/switchViewRoot"
+    android:layout_width="@dimen/switch_view_root_width"
+    android:layout_height="@dimen/switch_view_root_height">
 
     <View
         android:id="@+id/switchBackground"
-        android:layout_width="64dp"
-        android:layout_height="24dp"
+        android:layout_width="@dimen/switch_view_bg_width"
+        android:layout_height="@dimen/switch_view_bg_height"
         android:background="@drawable/on"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -40,20 +18,19 @@
 
     <View
         android:id="@+id/switchBtn"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:background="@drawable/thumb_circle_no_shadow"
-        android:elevation="3dp"
+        android:layout_width="@dimen/switch_btn_width"
+        android:layout_height="@dimen/switch_btn_height"
+        android:background="@drawable/thumb_circle_shadow"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@id/switchBackground"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/switchBackground" />
 
     <TextView
         android:id="@+id/leftText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:text="잔액"
+        android:text="ON"
         android:textColor="#fff"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,13 +41,12 @@
         android:id="@+id/rightText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="숨김"
+        android:text="OFF"
         android:textColor="#80FFFFFF"
         android:textSize="12dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

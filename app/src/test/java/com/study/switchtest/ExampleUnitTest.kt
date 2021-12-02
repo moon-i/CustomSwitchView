@@ -1,4 +1,4 @@
-package com.shinhan.switchtest
+package com.study.switchtest
 
 import org.junit.Test
 
