@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="switch_btn_width">34dp</dimen>
+    <dimen name="switch_view_bg_width">64dp</dimen>
+    <!-- root와 bg간 그림자 10DP-->
+    <dimen name="switch_view_root_width">74dp</dimen>
+
+    <dimen name="switch_btn_height">29dp</dimen>
+    <dimen name="switch_view_bg_height">24dp</dimen>
+    <!-- root와 bg간 그림자 10DP-->
+    <dimen name="switch_view_root_height">34dp</dimen>
+</resources>
